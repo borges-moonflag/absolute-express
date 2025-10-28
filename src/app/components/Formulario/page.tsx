@@ -13,21 +13,23 @@ export default function Formulario() {
         const formData = new FormData(e.target);
 
         const res = await fetch(
-            "https://seusite.com/wp-json/contact-form-7/v1/contact-forms/123/feedback",
+            "https://absolutecontabil.desenvolvimentomoonflag.com.br/wp-json/contact-form-7/v1/contact-forms/4/feedback",
             {
                 method: "POST",
                 body: formData,
             }
         );
 
-        const data = await res.json();
+  const data = await res.json();
 
-        if (data.status === "mail_sent") {
-            setStatus("Mensagem enviada com sucesso!");
-        } else {
-            setStatus("Erro ao enviar. Tente novamente.");
-        }
-    };
+  if (data.status === "mail_sent") {
+    setStatus("Mensagem enviada com sucesso!");
+  } else {
+    setStatus("Erro ao enviar. Tente novamente.");
+    console.log(data); // mostra detalhes do erro
+  }
+};
+
 
     return (
         <section className="w-full flex items-center justify-center bg-[var(--primary-tree)] pt-[100px] pb-[121px]">

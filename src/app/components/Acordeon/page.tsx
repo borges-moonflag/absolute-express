@@ -15,12 +15,12 @@ export default function Accordion() {
     {
       title: "Como sei qual serviço minha empresa realmente precisa?",
       content:
-        "Tailwind é uma biblioteca de utilitários CSS que torna a criação de layouts rápida, responsiva e fácil de manter.",
+        "Nossa equipe realiza um diagnóstico inicial para entender sua operação, identificar dores e indicar a melhor solução. Cada serviço é personalizado de acordo com a realidade da sua empresa.",
     },
     {
       title: "A Absolute atende empresas de qualquer porte e segmento?",
       content:
-        "Sim! Next.js pode consumir APIs do WordPress (via REST ou GraphQL) e renderizar os dados dinamicamente.",
+        "Sim. Embora tenhamos forte atuação com advogados, supermercados e profissionais da saúde, atendemos empresas de diferentes portes e áreas, sempre adaptando nossa metodologia às necessidades de cada cliente.",
     },
   ];
 
